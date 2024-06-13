@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/agenda-telefonica.png" alt="agenda">
+            <h1>Agenda telefônica</h1>
+        </header>
+        <form id="formulario-agenda">
+            <input type="text" id="contato" required placeholder="Nome do contato"/>
+            <input type="tel" id="telefone" placeholder="Numero do telefone"  maxlength="11" title="Digite um número de telefone contendo DDD e os números subsequentes."/>
+            <button type="submit">Salvar contato</button> 
+        </form>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome do Contato</th>
+                    <th>Telefone do contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Contatos salvos</td>
+                    <td id="salvos">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
